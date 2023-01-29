@@ -1,6 +1,6 @@
 {
     "project_name": "spice project",
-    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '-')|replace('.', '-')|trim() }}",
     "description": "a new project by spice",
     "author_name": "Dylan Stein",
     "domain_name": "spice.cloud",
