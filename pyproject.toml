@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "django-template"
-version = "0.1.0"
-description = ""
-authors = ["Dylan Stein <dylan@spice.cloud>"]
+name = "{{ cookiecutter.project_slug }}"
+version = "{{ cookiecutter.version }}"
+description = "{{ cookiecutter.description }}"
+authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"]
 license = ""
 
 [tool.poetry.dependencies]

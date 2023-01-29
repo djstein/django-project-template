@@ -1,0 +1,9 @@
+{
+    "project_name": "spice project",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "description": "a new project by spice",
+    "author_name": "Dylan Stein",
+    "domain_name": "spice.cloud",
+    "author_email": "{{ cookiecutter.author_name.lower()|replace(' ', '-') }}@spice.cloud",
+    "version": "0.1.0"
+  }
