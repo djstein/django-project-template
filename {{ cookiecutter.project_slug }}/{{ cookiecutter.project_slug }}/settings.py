@@ -26,6 +26,8 @@ env = environ.Env(
     DATABASE_PASSWORD=(str, ""),
     DATABASE_HOST=(str, "localhost"),
     DATABASE_PORT=(str, "5432"),
+    CSRF_COOKIE_SECURE=(bool, False),
+    SESSION_COOKIE_SECURE=(bool, False),
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -170,5 +172,5 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
 # CSRF
 CSRF_TRUSTED_ORIGINS = [] + env("CSRF_TRUSTED_ORIGINS")
 CSRF_USE_SESSIONS = True
-CSRF_COOKIE_SECURE = True
-SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = env("CSRF_COOKIE_SECURE")
+SESSION_COOKIE_SECURE = env("SESSION_COOKIE_SECURE")
