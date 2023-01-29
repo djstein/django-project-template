@@ -4,6 +4,6 @@
     "description": "a new project by spice",
     "author_name": "Dylan Stein",
     "domain_name": "spice.cloud",
-    "author_email": "{{ cookiecutter.author_name.lower()|replace(' ', '-') }}@spice.cloud",
+    "author_email": "dylan@spice.cloud",
     "version": "0.1.0"
   }

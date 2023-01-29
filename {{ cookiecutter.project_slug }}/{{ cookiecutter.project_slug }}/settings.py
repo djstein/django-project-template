@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
-from corsheaders.defaults import default_headers
 import environ
+from corsheaders.defaults import default_headers
 
 env = environ.Env(
     # set casting, default value
@@ -100,11 +100,11 @@ WSGI_APPLICATION = "template.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": env("DATABASE_NAME", "postgres"),
-        "USER": env("DATABASE_USER", "postgres"),
-        "PASSWORD": env("DATABASE_PASSWORD", ""),
-        "HOST": env("DATABASE_HOST", "localhost"),
-        "PORT": env("DATABASE_PORT", "5432"),
+        "NAME": env("DATABASE_NAME"),
+        "USER": env("DATABASE_USER"),
+        "PASSWORD": env("DATABASE_PASSWORD"),
+        "HOST": env("DATABASE_HOST"),
+        "PORT": env("DATABASE_PORT"),
         "CONN_MAX_AGE": 0,
         "TIME_ZONE": "UTC",
         "OPTIONS": {
